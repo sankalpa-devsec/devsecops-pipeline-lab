@@ -1,4 +1,4 @@
-@'
+
 # 🛡️ Production-Ready DevSecOps Container Pipeline
 
 ![DevSecOps CI Pipeline](https://github.com/sankalpa-devsec/devsecops-pipeline-lab/actions/workflows/security-pipeline.yml/badge.svg)

@@ -20,20 +20,21 @@ An automated DevSecOps CI/CD pipeline demonstrating container hardening, vulnera
                                     │                                       │
                                     ▼                                       ▼
                             ❌ Build Fails (Gate)                  ✅ Build Passes
----
 
-## 🔒 Security Implementations
+🔒 Security Implementations
+Attack Surface Reduction: Stripped out vulnerable default package managers (npm modules) from the production image.
 
-* **Attack Surface Reduction:** Stripped out vulnerable default package managers (`npm` modules) from the production image.
-* **Minimal Base Image:** Shifted to Alpine Linux (`node:22-alpine`) to minimize footprint and baseline vulnerabilities.
-* **Least Privilege Principle:** Executed application processes strictly under a non-root user (`USER node`).
-* **Automated Security Gate:** Enforced an automated Trivy scan on every pull request and push to the `main` branch with `exit-code: 1` on `CRITICAL` or `HIGH` findings.
+Minimal Base Image: Shifted to Alpine Linux (node:22-alpine) to minimize footprint and baseline vulnerabilities.
 
----
+Least Privilege Principle: Executed application processes strictly under a non-root user (USER node).
 
-## 🛠️ Tech Stack
+Automated Security Gate: Enforced an automated Trivy scan on every pull request and push to the main branch with exit-code: 1 on CRITICAL or HIGH findings.
 
-* **Runtime:** Node.js
-* **Containerization:** Docker
-* **CI/CD Automation:** GitHub Actions
-* **Security & Vulnerability Scanner:** Aqua Trivy
+🛠️ Tech Stack
+Runtime: Node.js
+
+Containerization: Docker
+
+CI/CD Automation: GitHub Actions
+
+Security & Vulnerability Scanner: Aqua Trivy

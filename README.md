@@ -21,6 +21,7 @@ An automated DevSecOps CI/CD pipeline demonstrating container hardening, vulnera
                                     │                                       │
                                     ▼                                       ▼
                             ❌ Build Fails (Gate)                  ✅ Build Passes
+````
 ---
 
 ## 🔒 Security Implementations
